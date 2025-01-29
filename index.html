@@ -3,41 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahithya Arveti Nagaraju</title>
+    <title>Sahithya Arveti Nagaraju - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 20px auto;
             padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .profile-picture {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            margin: 0 auto 20px;
+            display: block;
+            border: 3px solid #007BFF;
+        }
+        h1, h2, h3 {
+            color: #007BFF;
+            text-align: center;
         }
         .section {
             margin-bottom: 40px;
         }
-        .section h2 {
-            margin-bottom: 10px;
+        .section ul {
+            padding-left: 20px;
         }
-        .section p {
+        .section ul li {
             margin-bottom: 10px;
-        }
-        .contact {
-            margin-top: 40px;
         }
         .contact a {
-            margin-right: 10px;
             text-decoration: none;
             color: #007BFF;
+            margin-right: 10px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background: #007BFF;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -45,26 +67,65 @@
     <div class="container">
         <img src="assets/profile_picture.jpeg" alt="Profile Picture" class="profile-picture">
         <h1>Sahithya Arveti Nagaraju</h1>
-        <p>Graduate Student at University at Buffalo, The State University of New York</p>
+        <p style="text-align: center;">Graduate Student at University at Buffalo, The State University of New York</p>
 
         <div class="section">
             <h2>About Me</h2>
-            <p>I am a graduate student at the University at Buffalo, The State University of New York, pursuing my Master of Science in Engineering Science with a focus on Data Science. I have a strong background in software development, machine learning, and big data technologies. Prior to my graduate studies, I worked as a Site Reliability Engineer at Sabre Travel Technologies, where I led critical projects and enhanced system performance and scalability.</p>
+            <p>I am a graduate student pursuing a Master of Science in Engineering Science with a focus on Data Science at the University at Buffalo. With a strong background in software development, machine learning, and big data technologies, I am passionate about turning data into actionable insights. Previously, I worked as a Site Reliability Engineer at Sabre Travel Technologies, leading key projects to enhance system performance and scalability.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Master of Science in Engineering Science (Data Science)</strong>, State University of New York, Buffalo (2024-2025, GPA: 3.96/4.00)</li>
+                <li><strong>Bachelor of Science in Information Science and Engineering</strong>, Siddaganga Institute of Technology, India (2017-2021, CGPA: 9.44/10.00)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">R</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">Big Data Tools</div>
+                <div class="skill-item">TensorFlow</div>
+                <div class="skill-item">Tableau</div>
+                <div class="skill-item">GCP</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">Seaborn</div>
+                <div class="skill-item">Hadoop</div>
+            </div>
         </div>
 
         <div class="section">
             <h2>Experience</h2>
             <h3>Graduate Teaching Assistant</h3>
-            <p>University at Buffalo, Buffalo, NY, USA</p>
-            <p>January 2025 - Present</p>
+            <p><strong>University at Buffalo</strong>, Buffalo, NY (Jan 2025 - Present)</p>
             <ul>
                 <li>Assisted Professor Leonid Khinkis in preparing and delivering lectures on advanced statistical methods and data mining.</li>
-                <li>Supported students with concepts and assignments on statistical modeling and machine learning.</li>
-                <li>Graded assessments and provided timely feedback to students.</li>
+                <li>Supported students with assignments and projects related to machine learning and statistical modeling.</li>
+                <li>Graded assessments and provided timely feedback.</li>
+            </ul>
+
+            <h3>Site Reliability Engineer II</h3>
+            <p><strong>Sabre Travel Technologies</strong>, Bengaluru, India (Feb 2021 - Jan 2024)</p>
+            <ul>
+                <li>Led critical projects such as GCP, Oracle, and Nexus migrations, enhancing system scalability and performance.</li>
+                <li>Improved incident response times by optimizing monitoring and access management processes.</li>
             </ul>
         </div>
 
-        <!-- Add more sections for other experiences, projects, education, and skills -->
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Real Estate Price Prediction</strong>: Built a prediction system using Python, deployed via Docker on Digital Ocean.</li>
+                <li><strong>Obesity Risk Evaluator</strong>: Developed ML models to classify obesity risk levels using R and Python.</li>
+                <li><strong>MNIST Digit Classification</strong>: Implemented a neural network for handwritten digit recognition from scratch.</li>
+            </ul>
+        </div>
 
         <div class="contact">
             <h2>Contact</h2>
