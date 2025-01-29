@@ -5,75 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahithya Arveti Nagaraju - Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* General Styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
         .container {
             max-width: 900px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
             background: #fff;
-            border-radius: 10px;
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .profile-picture {
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin: 0 auto 20px;
-            display: block;
             border: 3px solid #007BFF;
         }
-        h1, h2, h3 {
+        header h1 {
+            font-size: 2.5rem;
             color: #007BFF;
-            text-align: center;
+            margin-top: 15px;
         }
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Section Styles */
         .section {
             margin-bottom: 40px;
         }
-        .section ul {
-            padding-left: 20px;
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            display: inline-block;
+            padding-bottom: 5px;
         }
+        .section p,
         .section ul li {
+            font-size: 1rem;
             margin-bottom: 10px;
         }
-        .contact a {
-            text-decoration: none;
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        ul li::before {
+            content: '•';
             color: #007BFF;
             margin-right: 10px;
         }
-        .contact a:hover {
-            text-decoration: underline;
-        }
+
+        /* Skills Grid */
         .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             gap: 10px;
         }
         .skill-item {
             background: #007BFF;
             color: #fff;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 14px;
+            padding: 8px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Contact Links */
+        .contact a {
+            text-decoration: none;
+            color: #007BFF;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="assets/profile_picture.jpeg" alt="Profile Picture" class="profile-picture">
-        <h1>Sahithya Arveti Nagaraju</h1>
-        <p style="text-align: center;">Graduate Student at University at Buffalo, The State University of New York</p>
+        <!-- Header Section -->
+        <header>
+            <img src="assets/profile_picture.jpeg" alt="Profile Picture">
+            <h1>Sahithya Arveti Nagaraju</h1>
+            <p>Graduate Student at University at Buffalo, The State University of New York</p>
+        </header>
 
+        <!-- About Section -->
         <div class="section">
             <h2>About Me</h2>
             <p>I am a graduate student pursuing a Master of Science in Engineering Science with a focus on Data Science at the University at Buffalo. With a strong background in software development, machine learning, and big data technologies, I am passionate about turning data into actionable insights. Previously, I worked as a Site Reliability Engineer at Sabre Travel Technologies, leading key projects to enhance system performance and scalability.</p>
         </div>
 
+        <!-- Education Section -->
         <div class="section">
             <h2>Education</h2>
             <ul>
@@ -82,6 +135,7 @@
             </ul>
         </div>
 
+        <!-- Skills Section -->
         <div class="section">
             <h2>Skills</h2>
             <div class="skills-grid">
@@ -100,6 +154,7 @@
             </div>
         </div>
 
+        <!-- Experience Section -->
         <div class="section">
             <h2>Experience</h2>
             <h3>Graduate Teaching Assistant</h3>
@@ -118,6 +173,7 @@
             </ul>
         </div>
 
+        <!-- Projects Section -->
         <div class="section">
             <h2>Projects</h2>
             <ul>
@@ -127,6 +183,7 @@
             </ul>
         </div>
 
+        <!-- Contact Section -->
         <div class="contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:sahithyaarvetinagaraju@gmail.com">sahithyaarvetinagaraju@gmail.com</a></p>
@@ -134,5 +191,8 @@
             <p>GitHub: <a href="https://github.com/SAHITHYA21" target="_blank">github.com/SAHITHYA21</a></p>
         </div>
     </div>
+    <footer>
+        &copy; 2025 Sahithya Arveti Nagaraju. All rights reserved.
+    </footer>
 </body>
 </html>
