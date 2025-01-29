@@ -20,17 +20,9 @@
             scroll-behavior: smooth;
         }
 
-        /* Color Scheme */
-        :root {
-            --primary-color: #008080; /* Teal */
-            --secondary-color: #FF7F50; /* Coral */
-            --light-color: #f8f9fa;
-            --dark-color: #333;
-        }
-
         /* Navbar */
         nav {
-            background: var(--primary-color);
+            background: #008080;
             color: #fff;
             display: flex;
             justify-content: space-between;
@@ -61,23 +53,39 @@
         header {
             text-align: center;
             padding: 50px 20px;
-            background: var(--primary-color);
+            background: #008080;
             color: #fff;
         }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            margin-bottom: 20px;
+        .profile-card {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 10px 0;
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        header p {
+        .profile-card img {
+            width: 100%;
+            border-bottom: 3px solid #008080;
+        }
+        .profile-card h1 {
             font-size: 1.2rem;
-            margin: 10px 0;
+            color: #333;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .profile-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
         }
 
         /* Section Styles */
@@ -89,45 +97,14 @@
         section h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: var(--primary-color);
+            color: #008080;
             text-align: center;
-            border-bottom: 2px solid var(--primary-color);
+            border-bottom: 2px solid #008080;
             display: inline-block;
             padding-bottom: 5px;
         }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            padding: 20px;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-        }
 
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 15px;
-        }
-        .skill-item {
-            background: var(--secondary-color);
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        /* Contact Section */
+        /* Contact Icons */
         .contact-icons {
             display: flex;
             justify-content: center;
@@ -136,17 +113,17 @@
         }
         .contact-icons a {
             font-size: 2rem;
-            color: var(--primary-color);
+            color: #008080;
             transition: color 0.3s;
         }
         .contact-icons a:hover {
-            color: var(--secondary-color);
+            color: #FF7F50;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            background: var(--primary-color);
+            background: #008080;
             color: #fff;
             margin-top: 40px;
         }
@@ -168,9 +145,12 @@
 
     <!-- Header Section -->
     <header>
-        <img src="assets/profile_picture.jpeg" alt="Profile Picture">
-        <h1>Sahithya Arveti Nagaraju</h1>
-        <p>Graduate Student at University at Buffalo, The State University of New York</p>
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <img src="assets/profile_picture.jpeg" alt="Profile Picture">
+            <h1>Sahithya Arveti Nagaraju</h1>
+            <p>Graduate Student at University at Buffalo</p>
+        </div>
     </header>
 
     <!-- About Section -->
@@ -182,14 +162,10 @@
     <!-- Education Section -->
     <section id="education">
         <h2>Education</h2>
-        <div class="card">
-            <h3>Master of Science in Engineering Science (Data Science)</h3>
-            <p>State University of New York, Buffalo (2024-2025, GPA: 3.96/4.00)</p>
-        </div>
-        <div class="card">
-            <h3>Bachelor of Science in Information Science and Engineering</h3>
-            <p>Siddaganga Institute of Technology, India (2017-2021, CGPA: 9.44/10.00)</p>
-        </div>
+        <ul>
+            <li><strong>Master of Science in Engineering Science (Data Science)</strong>, State University of New York, Buffalo (2024-2025, GPA: 3.96/4.00)</li>
+            <li><strong>Bachelor of Science in Information Science and Engineering</strong>, Siddaganga Institute of Technology, India (2017-2021, CGPA: 9.44/10.00)</li>
+        </ul>
     </section>
 
     <!-- Skills Section -->
@@ -204,32 +180,6 @@
             <div class="skill-item">Big Data Tools</div>
             <div class="skill-item">TensorFlow</div>
             <div class="skill-item">Tableau</div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>Graduate Teaching Assistant</h3>
-            <p>University at Buffalo, Buffalo, NY (Jan 2025 - Present)</p>
-        </div>
-        <div class="card">
-            <h3>Site Reliability Engineer II</h3>
-            <p>Sabre Travel Technologies, Bengaluru, India (Feb 2021 - Jan 2024)</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Real Estate Price Prediction</h3>
-            <p>Built a prediction system using Python, deployed via Docker on Digital Ocean.</p>
-        </div>
-        <div class="card">
-            <h3>MNIST Digit Classification</h3>
-            <p>Implemented a neural network for handwritten digit recognition from scratch.</p>
         </div>
     </section>
 
