@@ -16,237 +16,164 @@
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
             color: #333;
-            line-height: 1.6;
             scroll-behavior: smooth;
-        }
-
-        /* Color Scheme */
-        :root {
-            --primary-color: #008080; /* Teal */
-            --secondary-color: #FF7F50; /* Coral */
-            --light-color: #f8f9fa;
-            --dark-color: #333;
         }
 
         /* Navbar */
         nav {
-            background: var(--primary-color);
-            color: #fff;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #fff;
             padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .logo {
+        .nav-logo {
             font-size: 1.5rem;
             font-weight: bold;
+            color: #008080;
         }
         .nav-links {
+            list-style: none;
             display: flex;
         }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #008080;
+        }
 
-        /* Header Section */
+        /* Hero Section */
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 50px 20px;
-            background: var(--primary-color);
-            color: #fff;
+            background-color: #f0f0f0;
+            min-height: 100vh;
         }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            margin-bottom: 20px;
+        .hero-text {
+            max-width: 50%;
         }
-        header h1 {
+        .hero-text h1 {
             font-size: 2.5rem;
-            margin: 10px 0;
+            color: #333;
         }
-        header p {
+        .hero-text p {
             font-size: 1.2rem;
-            margin: 10px 0;
+            margin: 20px 0;
+            color: #666;
+        }
+        .hero-text a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008080;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .hero-text a:hover {
+            background-color: #005f5f;
+        }
+        .hero-image img {
+            width: 300px;
+            border-radius: 50%;
+            border: 5px solid #008080;
         }
 
         /* Section Styles */
         section {
             padding: 50px 20px;
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         section h2 {
             font-size: 2rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
+            color: #008080;
             text-align: center;
-            border-bottom: 2px solid var(--primary-color);
-            display: inline-block;
-            padding-bottom: 5px;
+            margin-bottom: 30px;
         }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            padding: 20px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card-details {
-            display: none;
-            margin-top: 10px;
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 15px;
-        }
-        .skill-item {
-            background: var(--secondary-color);
-            color: #fff;
-            padding: 10px;
+        .content {
             text-align: center;
-            border-radius: 8px;
             font-size: 1rem;
-            font-weight: bold;
+            color: #666;
         }
 
-        /* Contact Section */
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-        }
-        .contact-icons a {
-            font-size: 2rem;
-            color: var(--primary-color);
-            transition: color 0.3s;
-        }
-        .contact-icons a:hover {
-            color: var(--secondary-color);
-        }
-
+        /* Footer */
         footer {
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 20px;
-            background: var(--primary-color);
-            color: #fff;
-            margin-top: 40px;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
-        <div class="logo">Sahithya Arveti</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <div class="nav-logo">Sahithya Arveti</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Header Section -->
+    <!-- Hero Section -->
     <header>
-        <img src="assets/profile_picture.jpeg" alt="Profile Picture">
-        <h1>Sahithya Arveti Nagaraju</h1>
-        <p>Graduate Student at University at Buffalo, The State University of New York</p>
+        <div class="hero-text">
+            <h1>I am Sahithya Arveti Nagaraju</h1>
+            <p>Graduate student at University at Buffalo, passionate about Data Science and Software Development.</p>
+            <a href="#portfolio">My Projects</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/profile_picture.jpeg" alt="Profile Picture">
+        </div>
     </header>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a graduate student pursuing a Master of Science in Engineering Science with a focus on Data Science at the University at Buffalo. With a strong background in software development, machine learning, and big data technologies, I am passionate about turning data into actionable insights. Previously, I worked as a Site Reliability Engineer at Sabre Travel Technologies, leading key projects to enhance system performance and scalability.</p>
+        <div class="content">
+            <p>I am pursuing a Master's in Engineering Science with a focus on Data Science at the University at Buffalo. I have experience in software development, machine learning, and data analysis. My goal is to leverage technology to solve real-world problems effectively.</p>
+        </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="card">
-            <h3>Master of Science in Engineering Science (Data Science)</h3>
-            <p>State University of New York, Buffalo (2024-2025, GPA: 3.96/4.00)</p>
-        </div>
-        <div class="card">
-            <h3>Bachelor of Science in Information Science and Engineering</h3>
-            <p>Siddaganga Institute of Technology, India (2017-2021, CGPA: 9.44/10.00)</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="content">
+            <p>Coming soon: Explore my key projects in real estate price prediction, machine learning, and more.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">Python</div>
-            <div class="skill-item">R</div>
-            <div class="skill-item">SQL</div>
-            <div class="skill-item">C++</div>
-            <div class="skill-item">Machine Learning</div>
-            <div class="skill-item">Big Data Tools</div>
-            <div class="skill-item">TensorFlow</div>
-            <div class="skill-item">Tableau</div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>Graduate Teaching Assistant</h3>
-            <p>University at Buffalo, Buffalo, NY (Jan 2025 - Present)</p>
-        </div>
-        <div class="card">
-            <h3>Site Reliability Engineer II</h3>
-            <p>Sabre Travel Technologies, Bengaluru, India (Feb 2021 - Jan 2024)</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="card" onclick="toggleDetails(this)">
-            <h3>Real Estate Price Prediction</h3>
-            <p>Built a prediction system using Python, deployed via Docker on Digital Ocean.</p>
-            <div class="card-details">
-                <p>Details: Leveraged machine learning models to analyze and predict property prices based on historical data. Implemented user-friendly interfaces for real-time predictions.</p>
-            </div>
-        </div>
-        <div class="card" onclick="toggleDetails(this)">
-            <h3>MNIST Digit Classification</h3>
-            <p>Implemented a neural network for handwritten digit recognition from scratch.</p>
-            <div class="card-details">
-                <p>Details: Developed a custom neural network using Python and NumPy. Achieved high accuracy through iterative training and hyperparameter tuning.</p>
-            </div>
+        <div class="content">
+            <p>Python, SQL, Machine Learning, Big Data Tools, Tableau, and more.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <div class="contact-icons">
-            <a href="mailto:sahithyaarvetinagaraju@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/sahithyaarveti"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/SAHITHYA21"><i class="fab fa-github"></i></a>
+        <div class="content">
+            <p>Feel free to reach out via email or connect with me on LinkedIn.</p>
         </div>
     </section>
 
@@ -254,17 +181,5 @@
     <footer>
         &copy; 2025 Sahithya Arveti Nagaraju. All rights reserved.
     </footer>
-
-    <!-- JavaScript for Collapsible Details -->
-    <script>
-        function toggleDetails(card) {
-            const details = card.querySelector('.card-details');
-            if (details.style.display === 'block') {
-                details.style.display = 'none';
-            } else {
-                details.style.display = 'block';
-            }
-        }
-    </script>
 </body>
 </html>
