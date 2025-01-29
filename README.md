@@ -1,5 +1,5 @@
 # Sahithya Arveti Nagaraju
-![Profile Picture](assets/profile_picture.jpeg)
+![Profile Picture](assets/profile_picture.jpeg){: style="border-radius: 50%; width: 150px; height: 150px;"}
 
 📍 Buffalo, NY | 📧 sahithyaarvetinagaraju@gmail.com | 🌐 [LinkedIn](https://www.linkedin.com/in/sahithyaarveti/) | [GitHub](https://github.com/SAHITHYA21)
 
