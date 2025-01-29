@@ -14,7 +14,7 @@
         }
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
+            background: linear-gradient(to right, #f0e6f6, #d3cce3); /* Pastel gradient background */
             color: #333;
             scroll-behavior: smooth;
         }
@@ -24,7 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #fff;
+            background-color: #ffffffcc; /* Semi-transparent background */
             padding: 10px 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: sticky;
@@ -34,7 +34,7 @@
         .nav-logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #008080;
+            color: #4f6d7a; /* Soft professional color */
         }
         .nav-links {
             list-style: none;
@@ -50,7 +50,7 @@
             transition: color 0.3s;
         }
         .nav-links a:hover {
-            color: #008080;
+            color: #4f6d7a; /* Soft hover color */
         }
 
         /* Hero Section */
@@ -59,7 +59,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 50px 20px;
-            background-color: #f0f0f0;
+            background: linear-gradient(to right, #fff, #d6e0f0); /* Soft gradient background */
             min-height: 100vh;
         }
         .hero-text {
@@ -77,7 +77,7 @@
         .hero-text a {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #008080;
+            background-color: #4f6d7a;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -85,12 +85,14 @@
             transition: background-color 0.3s;
         }
         .hero-text a:hover {
-            background-color: #005f5f;
+            background-color: #3c5064; /* Darker shade for hover */
         }
         .hero-image img {
-            width: 300px;
-            border-radius: 50%;
-            border: 5px solid #008080;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px; /* Square shape */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
         }
 
         /* Section Styles */
@@ -101,7 +103,7 @@
         }
         section h2 {
             font-size: 2rem;
-            color: #008080;
+            color: #4f6d7a;
             text-align: center;
             margin-bottom: 30px;
         }
@@ -113,7 +115,7 @@
 
         /* Footer */
         footer {
-            background-color: #333;
+            background-color: #4f6d7a;
             color: #fff;
             text-align: center;
             padding: 20px;
