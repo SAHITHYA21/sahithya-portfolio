@@ -101,14 +101,15 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             padding: 20px;
+            cursor: pointer;
             transition: transform 0.3s ease;
         }
         .card:hover {
             transform: translateY(-5px);
         }
-        .card img {
-            width: 100%;
-            border-radius: 8px;
+        .card-details {
+            display: none;
+            margin-top: 10px;
         }
 
         /* Skills Grid */
@@ -223,13 +224,19 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="card">
+        <div class="card" onclick="toggleDetails(this)">
             <h3>Real Estate Price Prediction</h3>
             <p>Built a prediction system using Python, deployed via Docker on Digital Ocean.</p>
+            <div class="card-details">
+                <p>Details: Leveraged machine learning models to analyze and predict property prices based on historical data. Implemented user-friendly interfaces for real-time predictions.</p>
+            </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="toggleDetails(this)">
             <h3>MNIST Digit Classification</h3>
             <p>Implemented a neural network for handwritten digit recognition from scratch.</p>
+            <div class="card-details">
+                <p>Details: Developed a custom neural network using Python and NumPy. Achieved high accuracy through iterative training and hyperparameter tuning.</p>
+            </div>
         </div>
     </section>
 
@@ -247,5 +254,17 @@
     <footer>
         &copy; 2025 Sahithya Arveti Nagaraju. All rights reserved.
     </footer>
+
+    <!-- JavaScript for Collapsible Details -->
+    <script>
+        function toggleDetails(card) {
+            const details = card.querySelector('.card-details');
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+            } else {
+                details.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
