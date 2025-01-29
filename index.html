@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahithya Arveti Nagaraju - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* General Styles */
         * {
@@ -100,8 +101,18 @@
             margin-right: 15px;
             font-weight: bold;
         }
-        .contact a:hover {
-            text-decoration: underline;
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .contact-icons a {
+            font-size: 1.5rem;
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+        .contact-icons a:hover {
+            color: #0056b3;
         }
         footer {
             text-align: center;
@@ -186,9 +197,11 @@
         <!-- Contact Section -->
         <div class="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:sahithyaarvetinagaraju@gmail.com">sahithyaarvetinagaraju@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/sahithyaarveti" target="_blank">linkedin.com/in/sahithyaarveti</a></p>
-            <p>GitHub: <a href="https://github.com/SAHITHYA21" target="_blank">github.com/SAHITHYA21</a></p>
+            <div class="contact-icons">
+                <a href="mailto:sahithyaarvetinagaraju@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/sahithyaarveti" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SAHITHYA21" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
     <footer>
