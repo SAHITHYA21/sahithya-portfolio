@@ -1,7 +1,6 @@
 # Sahithya Arveti Nagaraju
-<img src="assets/profile_picture.jpeg" alt="Profile Picture" style="border-radius: 50%; width: 125px; height: 200px;">
 
-📍 Buffalo, NY | 📧 sahithyaarvetinagaraju@gmail.com | 🌐 [LinkedIn](https://www.linkedin.com/in/sahithyaarveti/) | [GitHub](https://github.com/SAHITHYA21)
+📍 Buffalo, NY | 🌐 [LinkedIn](https://www.linkedin.com/in/sahithyaarveti/) | [GitHub](https://github.com/SAHITHYA21)
 
 ## 👩‍🎓 About Me
 I am a passionate Data Scientist pursuing a Master's in Data Science at the University at Buffalo. With a background in Engineering and 3+ years of experience, I specialize in predictive modeling, data visualization, and cloud-based applications.
