@@ -52,7 +52,22 @@
         .nav-links a:hover {
             color: #4f6d7a; /* Soft hover color */
         }
-
+        .wave {
+            display: inline-block;
+            animation: wave-animation 2.5s infinite;
+            transform-origin: 70% 70%;
+        }
+        
+        @keyframes wave-animation {
+            0% { transform: rotate( 0.0deg) }
+            10% { transform: rotate(14.0deg) }
+            20% { transform: rotate(-8.0deg) }
+            30% { transform: rotate(14.0deg) }
+            40% { transform: rotate(-4.0deg) }
+            50% { transform: rotate(10.0deg) }
+            60% { transform: rotate( 0.0deg) }
+            100% { transform: rotate( 0.0deg) }
+        }
         /* Hero Section */
         header {
             display: flex;
@@ -283,7 +298,7 @@
     <!-- Hero Section -->
     <header>
         <div class="hero-text">
-            <h1 id="typing">Hey! I am Sahithya</h1>
+            <h1 id="typing">Hey! I am Sahithya <span class="wave">👋</span></h1>
             <p>Turning Data into Insights, and Insights into Impact.</p>
             <a href="#about">ABOUT ME</a>
         </div>
