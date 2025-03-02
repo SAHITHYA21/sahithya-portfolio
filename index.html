@@ -33,7 +33,12 @@
         .nav-logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #4f6d7a; /* Soft professional color */
+            color: #4f6d7a; 
+            text-decoration: none; 
+            transition: color 0.3s
+        }
+        .nav-logo a:hover {
+            color: #4f6d7a; /* Soft hover color */
         }
         .nav-links {
             list-style: none;
@@ -124,6 +129,12 @@
             border-radius: 8px; /* Square shape */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
             margin-right: 200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
         }
 
         /* Experience Section */
@@ -285,7 +296,7 @@
 <body>
     <!-- Navbar -->
     <nav>
-        <div class="nav-logo">sahithya arveti</div>
+        <a href="#" class="nav-logo">sahithya arveti</a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -313,15 +324,13 @@
             <div class="about-text">
                 <h2 style=" color: #4f6d7a;">About Me</h2>
                 <p style="text-align: center; padding: 20px 50px 50px 50px;">
-                    Hi, I'm Sahithya Arveti Nagaraju, a passionate graduate student at the University at Buffalo, where I am pursuing my Master's in Engineering Science, specializing in Data Science. With a strong foundation in software development, machine learning, and data analysis, I thrive on the intersection of technology and innovation.<br><br>
-    
-                    Throughout my academic journey, I've developed a deep interest in harnessing the power of data to drive impactful solutions. Whether it's analyzing large datasets to uncover hidden trends or building predictive models to solve complex real-world problems, I am constantly motivated to turn raw data into meaningful insights.<br><br>
-    
-                    I have experience with tools such as Python, SQL, Machine Learning, and Big Data Tools, and I'm passionate about applying these skills to real-world challenges. I aim to leverage data-driven strategies to create solutions that not only meet business objectives but also drive long-term impact.<br><br>
-    
-                    In addition to my technical skills, I believe in the power of collaboration and continuous learning. I'm always excited to explore new technologies, push the boundaries of what's possible, and contribute to innovative projects that have a positive effect on society.<br><br>
-    
-                    When I'm not working on my academic projects, you can find me exploring the latest trends in data science, reading about technological advancements, or experimenting with new tools and frameworks.
+                    Hi again 👋, I’m Sahithya, a data enthusiast passionate about transforming complex data into actionable insights. Currently, I’m pursuing my Master’s in Engineering Science with a focus on Data Science at the University at Buffalo.
+                    <br><br>
+                    My journey in data science involves uncovering patterns, solving problems with algorithms, and building predictive models. I enjoy working with messy datasets and developing machine learning solutions that drive meaningful outcomes. My technical toolkit includes Python, SQL, and various machine learning and big data tools, which I use to analyze data and create impactful solutions.
+                    <br><br>
+                    What motivates me is the potential of data to address real-world challenges, from improving business operations to tackling social issues. I believe every project is an opportunity to make a difference, not just analyze numbers.
+                    <br><br>
+                    Outside of data science, I enjoy hiking, experimenting with cooking, and listening to music. I’m always open to discussing technology, innovation, or sharing recommendations for great coffee spots!
                 </p>
             </div>
         </div>
@@ -376,7 +385,7 @@
                 <div class="experience-header">
                     <h3>Research Intern</h3>
                     <a href="https://www.samsungprism.com/" target="_blank">Samsung Prism</a>
-                    <a href="https://ijisae.org/index.php/IJISAE/article/view/2210" target="_blank">Publication</a></p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ijisae.org/index.php/IJISAE/article/view/2210" target="_blank">Publication</a></p>
                 </div>
                 <p class="role-dates">Sep 2020 - Aug 2021</p>
                 <div id="details4" class="experience-details">
