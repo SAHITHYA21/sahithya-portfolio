@@ -44,11 +44,11 @@ Siddaganga Institute of Technology, India (2017-2021)
 - Assisted in lectures and graded assignments for advanced statistical methods and data mining.
 
 ### Software Engineer  
-**Sabre Travel Technologies** (Feb 2021 – Jan 2024)  
+**Sabre Travel Technologies** (Jan 2021 – Jan 2024)  
 - Led cloud migration projects, improved system scalability, and reduced incident response times.
 
 ### Research Intern  
-**Samsung PRISM** (Sep 2020 – Aug 2021)  
+**Samsung PRISM** (Aug 2020 – Aug 2021)  
 - Published an LSTM-based Hindi-to-English translator in an international journal.
 
 ---
