@@ -43,7 +43,7 @@ Siddaganga Institute of Technology, India (2017-2021)
 **University at Buffalo** (Jan 2025 – Present)  
 - Assisted in lectures and graded assignments for advanced statistical methods and data mining.
 
-### Site Reliability Engineer  
+### Software Engineer  
 **Sabre Travel Technologies** (Feb 2021 – Jan 2024)  
 - Led cloud migration projects, improved system scalability, and reduced incident response times.
 
